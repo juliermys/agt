@@ -8,7 +8,7 @@ const App = (): JSX.Element => (
     <Head>
       <title>{textTitle}</title>
     </Head>
-    <HomeScreen/>
+    <HomeScreen />
   </React.Fragment>
 )
 

@@ -1,6 +1,5 @@
-import React from 'react';
+import React from 'react'
 
 export const HomeScreen = (): JSX.Element => {
-  return <div >ERIC SILVA</div>;
+  return <div>Eric Silva</div>
 }
-
