@@ -10,8 +10,10 @@ export const theme: DefaultTheme = {
     bigStrong: '#030816'
   },
   background: {
-    primary: '#fefefe',
-    secundary: '#4F5665',
-    card: '#3D4094'
+    default: '#FFFFFF',
+    primary: '#0f4688',
+    secundary: '#D6251C',
+    card: '#F7F7F7',
+    table: '#EEEEEE'
   }
 }

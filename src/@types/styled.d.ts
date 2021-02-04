@@ -15,9 +15,11 @@ declare module 'styled-components' {
       bigStrong: string
     }
     background: {
+      default: string
       primary: string
       secundary: string
       card: string
+      table: string
     }
   }
 }

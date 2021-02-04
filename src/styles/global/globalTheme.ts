@@ -21,7 +21,7 @@ export default createGlobalStyle`
   
   body { 
     -webkit-font-smoothing: antialiased;
-    background-color: ${({ theme }) => theme.color}
+    background-color: ${({ theme }) => theme.background.default}
      }
   h1, h2, h3, h4, h5, h6, p, strong{ 
     font-weight: 500;
