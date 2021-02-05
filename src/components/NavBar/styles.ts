@@ -1,12 +1,18 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-  background-color: transparent;
+  background-color: ${({ theme }) => theme.background.default};
   height: 98px;
+  margin-bottom: 98px;
   max-height: 80vh;
   width: 100%;
   margin: auto;
   border-bottom: 2px solid ${({ theme }) => theme.background.primary};
+  position: -webkit-sticky;
+  position: sticky;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 35px;
+  top: 0;
+  z-index: 100;
 `
 
 export const Container = styled.div`
