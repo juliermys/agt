@@ -10,7 +10,6 @@ export const Container = styled.div`
 export const AwesomeSliderStyled = styled(AwesomeSlider)`
   max-height: 90vh;
   z-index: 9;
-  margin-bottom: -100px;
 
   > nav > button {
     background-color: transparent;
