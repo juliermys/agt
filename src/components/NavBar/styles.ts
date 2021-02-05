@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const Wrapper = styled.div`
   background-color: transparent;
   height: 98px;
+  max-height: 80vh;
   width: 100%;
   margin: auto;
   border-bottom: 2px solid ${({ theme }) => theme.background.primary};
