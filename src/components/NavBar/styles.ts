@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.background.default};
-  height: 98px;
+  height: 50px;
   margin-bottom: 98px;
   max-height: 80vh;
   width: 100%;
@@ -24,9 +24,9 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  > img {
-    width: 190px;
-    height: 61px;
+  > svg {
+    height: 100%;
+    width: 10%;
   }
 
   > ul {

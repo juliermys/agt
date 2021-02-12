@@ -1,10 +1,11 @@
 import { Container, Wrapper } from './styles'
+import LogoSVG from '../../../public/images/logo.svg'
 
 export const NavBar = (): JSX.Element => {
   return (
     <Wrapper>
       <Container>
-        <img src="/images/logo.png" alt="Logo Image - AGT Mídias" />
+        <LogoSVG />
         <ul>
           <li>
             <a href="">Inicio</a>
