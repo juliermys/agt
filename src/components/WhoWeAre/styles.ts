@@ -9,6 +9,7 @@ export const Container = styled.div`
 
 export const ImageContainer = styled.div`
   width: 50%;
+  z-index: 6;
 `
 
 export const Image = styled.img`
