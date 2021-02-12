@@ -1,3 +1,4 @@
+import { MiniBanner } from '../../../components/MiniBanner'
 import { NavBar } from '../../../components/NavBar'
 import { Services } from '../../../components/Services'
 import { Slider } from '../../../components/Slider'
@@ -9,6 +10,7 @@ export const HomeScreen = (): JSX.Element => {
     <Container>
       <NavBar />
       <Slider />
+      <MiniBanner />
       <WhoWeAre />
       <Services />
     </Container>
