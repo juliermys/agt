@@ -6,15 +6,14 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     outline: none;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font: 400 16px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-family: 'Montserrat', sans-serif;
     background: transparent;
   }
   div, section {
     display: flex;
   }
   body, button, input{
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     height: 100vh;
   }
@@ -24,7 +23,7 @@ export default createGlobalStyle`
     background-color: ${({ theme }) => theme.background.default}
      }
   h1, h2, h3, h4, h5, h6, p, strong{ 
-    font-weight: 500;
+    font-weight: 900;
     font-size: clamp(1em, 0em + 0.4vw, 1.5em); 
   }
   button{ cursor: pointer; }

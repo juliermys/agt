@@ -8,7 +8,7 @@ export const Container = styled.div`
 `
 
 export const ImageContainer = styled.div`
-  width: 50%;
+  width: 40%;
   z-index: 6;
 `
 
@@ -21,9 +21,16 @@ export const Image = styled.img`
 export const WhoWeAreTextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
+  margin-top: 2.5rem;
   justify-content: center;
   align-items: flex-start;
+`
+
+export const TextHeaer = styled.div`
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
 `
 
 export const WhoWeAreTextHeader = styled.div`
@@ -31,27 +38,46 @@ export const WhoWeAreTextHeader = styled.div`
   flex-direction: column;
 
   > h1 {
-    color: ${({ theme }) => theme.background.secundary};
-    font-size: 1.5rem;
-    font-weight: bold;
+    color: ${({ theme }) => theme.background.primary};
+    font-size: 5rem;
+    letter-spacing: -5px;
+    text-transform: uppercase;
+    font-weight: 900;
+    align-self: center;
+    height: 100%;
   }
 
   > hr {
-    border: none;
-    width: 40%;
-    height: 4px;
+    width: 75%;
+    margin-top: -30px;
+    height: 10px;
     background-color: ${({ theme }) => theme.background.primary};
   }
 `
 
+export const WhoWeAreTextHeaderSecond = styled.div`
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  > h4 {
+    margin-top: 15px;
+    transform: translate(-10%);
+    margin-bottom: 30%;
+    color: ${({ theme }) => theme.background.secundary};
+    font-size: 3rem;
+    font-weight: 900;
+  }
+`
+
 export const WhoWeAreTextBody = styled.div`
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin-top: 30px;
+  margin-bottom: 40px;
   max-width: 35rem;
 
   > p {
-    color: ${({ theme }) => theme.text.default};
-    font-weight: inherit;
+    color: ${({ theme }) => theme.text.secundary};
+    font-weight: 700;
     font-size: 1.1rem;
   }
 `
@@ -59,26 +85,32 @@ export const WhoWeAreTextBody = styled.div`
 export const WhoWeAreTextFooter = styled.div`
   display: flex;
   flex-direction: column;
-
-  > h3 {
-    margin-bottom: 20px;
-    font-weight: 900;
+  .color-blue {
+    color: ${({ theme }) => theme.background.primary};
+  }
+  > section,
+  p {
+    color: ${({ theme }) => theme.text.secundary};
     font-size: 2rem;
-    color: ${({ theme }) => theme.background.secundary};
+    margin-bottom: 20px;
+  }
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `
 
-export const WhoWeAreFooterIcon = styled.div`
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: ${({ theme }) => theme.background.primary};
-  margin-right: 5px;
+export const WhoWeAreFooterIcon = styled.div<{ icon: string }>`
+  background-color: red;
 
+  height: 35px;
+  width: 35px;
+  border: none;
+  background: url(${({ icon }) => icon}) no-repeat;
+  background-size: cover;
   :hover {
-    background-color: ${({ theme }) => theme.background.secundary};
     cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transform: scale(1.03);
+    transform: scale(1.07);
   }
 `
