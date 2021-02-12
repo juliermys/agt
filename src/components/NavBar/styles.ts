@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   max-height: 80vh;
   width: 100%;
   margin: auto;
-  border-bottom: 2px solid ${({ theme }) => theme.background.primary};
+  border-bottom: 4px solid ${({ theme }) => theme.background.primary};
   position: -webkit-sticky;
   position: sticky;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 35px;
@@ -46,6 +46,8 @@ export const Container = styled.div`
   }
 
   > ul > li > a {
+    font-weight: 600;
+    color: ${({ theme }) => theme.background.primary};
     :hover {
       color: ${({ theme }) => theme.background.secundary};
     }
