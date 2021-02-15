@@ -6,6 +6,7 @@ export const theme: DefaultTheme = {
   text: {
     secundary: '#D6251C',
     default: '#2C2C2C',
+    ligth: '#FFFFFF',
     strong: '#0B132A',
     bigStrong: '#030816'
   },
