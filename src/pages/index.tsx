@@ -6,6 +6,7 @@ const textTitle = 'AGT Mídias | 📱 𝘚𝘰𝘤𝘪𝘢𝘭 𝘔𝘦𝘥𝘪�
 const App = (): JSX.Element => (
   <React.Fragment>
     <Head>
+      <link rel="shortcut icon" href="/ico/favicon.png" />
       <title>{textTitle}</title>
     </Head>
     <HomeScreen />
