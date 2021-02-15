@@ -9,8 +9,8 @@ export const Wrapper = styled.div`
   margin: auto;
   border-bottom: 4px solid ${({ theme }) => theme.background.primary};
   position: -webkit-sticky;
-  position: sticky;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 35px;
+  position: fixed;
+  box-shadow: ${({ theme }) => theme.background.primary} 0px 5px 50px;
   top: 0;
   z-index: 100;
 `
