@@ -11,8 +11,8 @@ export const theme: DefaultTheme = {
   },
   background: {
     default: '#FFFFFF',
-    primary: '#174886',
-    secundary: '#D6251C',
+    primary: '#171c67',
+    secundary: '#961009',
     card: '#F7F7F7',
     table: '#EEEEEE'
   }
