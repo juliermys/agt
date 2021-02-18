@@ -102,8 +102,6 @@ export const WhoWeAreTextFooter = styled.div`
 `
 
 export const WhoWeAreFooterIcon = styled.div<{ icon: string }>`
-  background-color: red;
-
   height: 35px;
   width: 35px;
   border: none;

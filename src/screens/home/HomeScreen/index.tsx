@@ -1,4 +1,5 @@
 import Contact from '../../../components/Contact'
+import Footer from '../../../components/Footer'
 import { MiniBanner } from '../../../components/MiniBanner'
 import { NavBar } from '../../../components/NavBar'
 import { Services } from '../../../components/Services'
@@ -15,6 +16,7 @@ export const HomeScreen = (): JSX.Element => {
       <WhoWeAre />
       <Services />
       <Contact />
+      <Footer />
     </Container>
   )
 }

@@ -21,6 +21,7 @@ declare module 'styled-components' {
       secundary: string
       card: string
       table: string
+      disable: string
     }
   }
 }

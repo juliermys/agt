@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
 
   > hr {
-    height: 0.5rem;
+    height: 3px;
     width: 100%;
     max-width: 1200px;
     margin: auto;
