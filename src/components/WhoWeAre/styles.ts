@@ -97,7 +97,11 @@ export const WhoWeAreTextFooter = styled.div`
   > div {
     display: flex;
     align-items: center;
+    width: 33%;
     justify-content: center;
+    > div {
+      width: 100%;
+    }
   }
 `
 

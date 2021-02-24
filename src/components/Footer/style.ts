@@ -67,6 +67,12 @@ export const Rigth = styled.div`
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  > div {
+    display: flex;
+    align-items: center;
+    width: 33%;
+    justify-content: center;
+  }
 `
 
 export const FooterIcon = styled.div<{ icon: string }>`

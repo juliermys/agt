@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import InputMask from 'react-input-mask'
 
 export const Wrapper = styled.div`
@@ -74,7 +74,7 @@ export const Row = styled.div`
   margin: 1rem 0;
 `
 
-export const Input = styled(InputMask)`
+export const Input = styled(InputMask)<{ error: boolean }>`
   font-weight: 400;
   margin: 0 10px 0 0;
   display: flex;
@@ -92,6 +92,12 @@ export const Input = styled(InputMask)`
     cursor: text;
     border: 2px solid ${({ theme }) => theme.background.secundary};
   }
+
+  ${({ error }) =>
+    error &&
+    css`
+      border: 2px solid ${({ theme }) => theme.background.secundary};
+    `}
 `
 
 export const ButtonRegister = styled.button`
@@ -112,4 +118,48 @@ export const ButtonRegister = styled.button`
     -webkit-transition: 0.3s ease-in;
     -webkit-filter: drop-shadow(5px 7px 3px rgba(0, 0, 0, 0.5));
   }
+`
+
+export const InputRow = styled.div<{ error: boolean }>`
+  padding: 2px;
+  height: 75px;
+  max-height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 80;
+  position: relative;
+
+  > span {
+    display: none;
+  }
+
+  ${({ error }) =>
+    error &&
+    css`
+      > span {
+        display: flex;
+        width: 300px;
+        max-width: 300px;
+        bottom: 0;
+        padding: 17px 0 2px 0;
+        left: 2px;
+        position: absolute;
+        z-index: -17;
+        background-color: red;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -10px;
+        font-size: 12px;
+        color: ${({ theme }) => theme.background.default};
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        transition: 0.3s ease-in;
+        -webkit-transition: 0.3s ease-in;
+      }
+    `}
 `

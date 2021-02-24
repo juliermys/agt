@@ -10,7 +10,8 @@ import {
   InputGroup,
   Row,
   Input,
-  ButtonRegister
+  ButtonRegister,
+  InputRow
 } from './styles'
 
 const Contact = (): JSX.Element => {
@@ -25,6 +26,9 @@ const Contact = (): JSX.Element => {
   const [valueInputEmail, setValueInputEmail] = useState('')
   const [valueInputName, setValueInputName] = useState('')
   const [valueInputWhatsApp, setValueInputWhatsApp] = useState('')
+  const [errorInputEmail, setErrorInputEmail] = useState('')
+  const [errorInputName, setErrorInputName] = useState('')
+  const [errorInputWhatsApp, setErrorInputWhatsApp] = useState('')
   const [isLoading, setIsLoading] = useState(false)
 
   const handlerSetValueInputEmail = useCallback(
@@ -48,11 +52,20 @@ const Contact = (): JSX.Element => {
     [valueInputEmail]
   )
 
-  const handlerClickButtonRegister = useCallback(() => {
+  const handlerClickButtonRegister = useCallback(async () => {
     setIsLoading(true)
-    setTimeout(() => {
-      setIsLoading(false)
-    }, 5000)
+
+    if (valueInputEmail === '') setErrorInputEmail('Campo email é obrigatorio')
+
+    if (valueInputName === '') setErrorInputName('Campo nome é obrigatorio')
+
+    if (valueInputWhatsApp === '') {
+      setErrorInputWhatsApp('Campo WhatsApp é obrigatorio')
+    }
+
+    if (valueInputWhatsApp.length < 17) {
+      setErrorInputWhatsApp('Campo WhatsApp mal formatado')
+    }
   }, [isLoading])
 
   return (
@@ -70,29 +83,41 @@ const Contact = (): JSX.Element => {
           <label htmlFor="label-form">Digite sua informações:</label>
           <InputGroup>
             <Row>
-              <Input
-                mask={''}
-                placeholder="E-mail"
-                type={'email'}
-                value={valueInputEmail}
-                onChange={handlerSetValueInputEmail}
-              />
-              <Input
-                mask={''}
-                placeholder="Nome"
-                type="text"
-                value={valueInputName}
-                onChange={handlerSetValueInputName}
-              />
+              <InputRow error={errorInputEmail !== ''}>
+                <Input
+                  error={errorInputEmail !== ''}
+                  mask={''}
+                  placeholder="E-mail"
+                  type={'email'}
+                  value={valueInputEmail}
+                  onChange={handlerSetValueInputEmail}
+                />
+                <span>{errorInputEmail}</span>
+              </InputRow>
+              <InputRow error={errorInputName !== ''}>
+                <Input
+                  error={errorInputName !== ''}
+                  mask={''}
+                  placeholder="Nome"
+                  type="text"
+                  value={valueInputName}
+                  onChange={handlerSetValueInputName}
+                />
+                <span>{errorInputName}</span>
+              </InputRow>
             </Row>
             <Row>
-              <Input
-                mask={'(99) 99999-9999'}
-                placeholder="whatsapp"
-                type="text"
-                value={valueInputWhatsApp}
-                onChange={handlerSetValueInputWhatsApp}
-              />
+              <InputRow error={errorInputWhatsApp !== ''}>
+                <Input
+                  error={errorInputWhatsApp !== ''}
+                  mask={'(99) 99999-9999'}
+                  placeholder="whatsapp"
+                  type="text"
+                  value={valueInputWhatsApp}
+                  onChange={handlerSetValueInputWhatsApp}
+                />
+                <span>{errorInputWhatsApp}</span>
+              </InputRow>
               <ButtonRegister onClick={handlerClickButtonRegister}>
                 {!isLoading ? (
                   'cadastrar'
