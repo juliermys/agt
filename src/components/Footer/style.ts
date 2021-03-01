@@ -26,7 +26,7 @@ export const Left = styled.div`
   .author {
     transition: 0.3s ease-in;
     -webkit-transition: 0.3s ease-in;
-    font-size: 0.7rem;
+    font-size: 1rem;
     color: ${({ theme }) => theme.background.disable};
     :hover {
       color: ${({ theme }) => theme.background.primary};

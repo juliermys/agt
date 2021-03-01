@@ -26,7 +26,6 @@ export const AwesomeSliderStyled = styled(AwesomeSlider)`
 `
 
 export const BulletsContainer = styled.div`
-  background-color: red;
   height: 20px;
   width: 100%;
   margin-top: -10px;

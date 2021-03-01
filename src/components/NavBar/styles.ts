@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
 `
 
 export const Container = styled.div`
-  width: 100%;
+  width: 90%;
   margin: auto;
   max-width: 1140px;
   height: 100%;
@@ -35,7 +35,7 @@ export const Container = styled.div`
 
   > ul > li {
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: bold;
     color: ${({ theme }) => theme.background.primary};
     padding-right: 30px;

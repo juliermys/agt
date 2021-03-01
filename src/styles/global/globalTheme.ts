@@ -9,6 +9,9 @@ export default createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
     background: transparent;
   }
+  html {
+    font-size: 62.5%;
+  }
   div, section {
     display: flex;
   }
@@ -20,11 +23,11 @@ export default createGlobalStyle`
   
   body { 
     -webkit-font-smoothing: antialiased;
-    background-color: ${({ theme }) => theme.background.default}
+    background-color: ${({ theme }) => theme.background.default};
+    font-size: 1.6rem;
      }
   h1, h2, h3, h4, h5, h6, p, strong{ 
     font-weight: 900;
-    font-size: clamp(1em, 0em + 0.4vw, 1.5em); 
   }
   button{ cursor: pointer; }
   a { text-decoration: none; }

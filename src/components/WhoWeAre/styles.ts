@@ -2,18 +2,19 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
+  padding: 0 5%;
   display: flex;
   justify-content: space-between;
-  background: url('whoWeAre/background/image-background.png');
 `
 
 export const ImageContainer = styled.div`
   width: 40%;
   z-index: 6;
+  height: 100%;
 `
 
 export const Image = styled.img`
-  height: 37rem;
+  height: 45rem;
   background-size: 10px;
   margin: auto;
 `
@@ -39,7 +40,7 @@ export const WhoWeAreTextHeader = styled.div`
 
   > h1 {
     color: ${({ theme }) => theme.background.primary};
-    font-size: 5rem;
+    font-size: 6rem;
     letter-spacing: -5px;
     text-transform: uppercase;
     font-weight: 900;
@@ -49,7 +50,7 @@ export const WhoWeAreTextHeader = styled.div`
 
   > hr {
     width: 75%;
-    margin-top: -30px;
+    margin-top: -25px;
     height: 10px;
     background-color: ${({ theme }) => theme.background.primary};
   }
@@ -65,7 +66,7 @@ export const WhoWeAreTextHeaderSecond = styled.div`
     transform: translate(-10%);
     margin-bottom: 30%;
     color: ${({ theme }) => theme.background.secundary};
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 900;
   }
 `
@@ -78,7 +79,7 @@ export const WhoWeAreTextBody = styled.div`
   > p {
     color: ${({ theme }) => theme.text.secundary};
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 `
 
@@ -91,7 +92,7 @@ export const WhoWeAreTextFooter = styled.div`
   > section,
   p {
     color: ${({ theme }) => theme.text.secundary};
-    font-size: 2rem;
+    font-size: 4rem;
     margin-bottom: 20px;
   }
   > div {

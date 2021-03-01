@@ -39,14 +39,14 @@ export const ContentLeft = styled.div`
   > h2 {
     color: ${({ theme }) => theme.text.ligth};
     font-weight: 700;
-    font-size: 1.7rem;
-    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
   }
 
   > p {
     color: ${({ theme }) => theme.text.ligth};
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 1.3rem;
   }
 `
 
@@ -86,6 +86,7 @@ export const Input = styled(InputMask)<{ error: boolean }>`
   max-height: 40px;
   padding: 0 20px;
   border-radius: 20px;
+  font-size: 1.6rem;
   color: ${({ theme }) => theme.text.secundary};
   background-color: ${({ theme }) => theme.background.default};
   :hover {
@@ -108,6 +109,7 @@ export const ButtonRegister = styled.button`
   background-color: ${({ theme }) => theme.background.secundary};
   color: ${({ theme }) => theme.text.ligth};
   text-transform: uppercase;
+  font-size: 1.6rem;
   :hover {
     background-color: ${({ theme }) => theme.background.default};
     color: ${({ theme }) => theme.background.secundary};
@@ -154,7 +156,7 @@ export const InputRow = styled.div<{ error: boolean }>`
         align-items: center;
         justify-content: center;
         margin-top: -10px;
-        font-size: 12px;
+        font-size: 1.2rem;
         color: ${({ theme }) => theme.background.default};
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;

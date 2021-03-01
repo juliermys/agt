@@ -4,6 +4,8 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.background.primary};
   display: flex;
   flex-direction: column;
+  width: 100%;
+  padding: 0 5%;
 `
 
 export const TitleContainer = styled.div`
@@ -14,7 +16,7 @@ export const TitleContainer = styled.div`
   > h3 {
     margin-bottom: -10px;
     color: ${({ theme }) => theme.text.ligth};
-    font-size: 3rem;
+    font-size: 4.5rem;
     font-weight: 900;
     text-transform: uppercase;
   }
@@ -35,7 +37,7 @@ export const TitleContainer = styled.div`
   }
   > div > h3 {
     color: ${({ theme }) => theme.text.ligth};
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 900;
     text-transform: lowercase;
   }
@@ -80,11 +82,11 @@ export const ContainerRigth = styled.div`
     color: ${({ theme }) => theme.text.ligth};
     font-weight: 700;
     margin: 0 0 1rem 0;
-    font-size: 1rem;
+    font-size: 1.7rem;
   }
   > p {
     color: ${({ theme }) => theme.text.ligth};
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
 `
