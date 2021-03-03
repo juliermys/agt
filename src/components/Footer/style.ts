@@ -8,7 +8,7 @@ export const Container = styled.div`
   width: 100%;
   max-width: 1100px;
   margin: auto;
-  padding: 1.5rem 0;
+  padding: 1.5rem 5%;
 `
 
 export const Left = styled.div`
