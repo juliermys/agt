@@ -1,5 +1,4 @@
 import React from 'react'
-
 import {
   Container,
   BehanceLogo,
@@ -14,19 +13,29 @@ export const IconsContainer = (): JSX.Element => {
   return (
     <Container>
       <Button>
-        <InstagramLogo />
+        <a target="blank" href="https://www.instagram.com/agtmidias">
+          <InstagramLogo />
+        </a>
       </Button>
       <Button>
-        <FacebookLogo />
+        <a target="blank" href="https://www.facebook.com/agtmidias">
+          <FacebookLogo />
+        </a>
       </Button>
       <Button>
-        <TwitterLogo />
+        <a target="blank" href="https://www.twitter.com/agtmidias">
+          <TwitterLogo />
+        </a>
       </Button>
       <Button>
-        <BehanceLogo />
+        <a target="blank" href="https://www.behance.net/agtmidias">
+          <BehanceLogo />
+        </a>
       </Button>
       <Button>
-        <LinkedinLogo />
+        <a target="blank" href="https://www.linkedin.com/company/agtmidias">
+          <LinkedinLogo />
+        </a>
       </Button>
     </Container>
   )

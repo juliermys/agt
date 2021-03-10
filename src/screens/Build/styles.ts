@@ -15,7 +15,7 @@ export const Container = styled.div`
   align-items: center;
   background: url('build/background.png') no-repeat;
   background-size: cover;
-  > div > button > svg {
+  > div > button > a > svg {
     * {
       fill: #53565a;
     }
