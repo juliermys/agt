@@ -5,7 +5,7 @@ export const Build = (): JSX.Element => (
   <Container>
     <Logo />
     <div className="text">
-      <h1>Estamos em contrução</h1>
+      <h1>Estamos em construção</h1>
       <p>ah, aproveita e faz uma visita a nossas redes sociais!</p>
     </div>
     <IconsContainer />
