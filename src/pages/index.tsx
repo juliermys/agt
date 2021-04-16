@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import { Build } from '../screens/Build'
-const textTitle = 'AGT Mídias | 𝘔𝘢𝘳𝘬𝘦𝘵𝘪𝘯𝘨 𝘋𝘪𝘨𝘪𝘵𝘢𝘭 e Publicidade'
+const textTitle = 'AGT Mídias - Agência de Marketing Digital'
 
 const App = (): JSX.Element => (
   <React.Fragment>
